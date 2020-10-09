@@ -1,8 +1,4 @@
-
 # Makefile include defining variable SRCS containing list of all source files
 
 SRCS := \
-  utils/math/functions.cpp \
-  utils/unit_conversions.cpp \
-  array_max.cpp \
-  things/person.cpp \
+  # Example:	utils/math/functions.cpp \
