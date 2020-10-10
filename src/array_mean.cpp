@@ -1,7 +1,7 @@
 /*
  * Author: Atte Niemi
  * Organisation: HYPED
- * Date: 
+ * Date: 10/10/2020
  * Description: Calculates the mean of an array
  *
  *    Copyright 2018 HYPED
@@ -15,25 +15,24 @@
  *    either express or implied. See the License for the specific language governing permissions and
  *    limitations under the License.
  */
+#include "array_mean.hpp"
 
 #include <iostream>
 
-float array_mean(const int *array, const int size) 
+float arrayMean(const int *array, const int size) 
 {
   int sum = 0;
-    for (int i=0;i<size;++i) {
-      sum += array[i];
-
+  for (int i = 0; i<size; ++i) {
+    sum += array[i];
   }
-
   return ((float) sum) / size;
 }
 
 int main() 
 {
   int test1[5] = {1,2,3,4,5};
-  std::cout << array_mean(test1, 5) << "\n";
+  std::cout << arrayMean(test1, 5) << "\n";
   int test2[6] = {1,2,3,4,5,6};
-  std::cout << array_mean(test2, 6);
+  std::cout << arrayMean(test2, 6);
   return 0;
 }
