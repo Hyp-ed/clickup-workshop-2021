@@ -22,7 +22,7 @@
 float arrayMean(const int *array, const int size) 
 {
   int sum = 0;
-  for (int i = 0; i<size; ++i) {
+  for (int i = 0; i < size; ++i) {
     sum += array[i];
   }
   return ((float) sum) / size;
