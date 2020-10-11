@@ -2,3 +2,5 @@
 
 SRCS := \
   # Example:	utils/math/functions.cpp \
+              src/things/rectangle.cpp \
+              src/demo_rectangle.cpp\
